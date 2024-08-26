@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="PD" failures="9" tests="9" name="TestFramework.basics" time="0.405" errors="0" timestamp="3 Jul 2024 04:39:58 GMT">
+  <testcase classname="TestFramework.basics" name="getPlaceAPI" time="0.327">
+    <failure type="java.lang.NoClassDefFoundError" message="javax/xml/bind/JAXBException">
+      <![CDATA[java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at TestFramework.basics.getPlaceAPI(basics.java:18)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="TestFramework.basics2" name="createPlaceAPI" time="0.003">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class io.restassured.RestAssured">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at TestFramework.basics2.createPlaceAPI(basics2.java:17)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException [in thread "main"]
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at TestFramework.basics.getPlaceAPI(basics.java:18)
+	... 23 more
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="TestFramework.basics3" name="AddandDeletePlace" time="0.011">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class io.restassured.RestAssured">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at TestFramework.basics3.AddandDeletePlace(basics3.java:41)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException [in thread "main"]
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at TestFramework.basics.getPlaceAPI(basics.java:18)
+	... 23 more
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="TestFramework.basics4" name="postDataXML" time="0.006">
+    <failure type="java.nio.file.NoSuchFileException" message="C:\Users\rahul\Documents\postdata.xml">
+      <![CDATA[java.nio.file.NoSuchFileException: C:\Users\rahul\Documents\postdata.xml
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at TestFramework.basics4.GenerateStringFromResource(basics4.java:47)
+	at TestFramework.basics4.postDataXML(basics4.java:22)
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="TestFramework.basics5" name="extractingNamesAPI" time="0.002">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class io.restassured.RestAssured">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at TestFramework.basics5.extractingNamesAPI(basics5.java:21)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException [in thread "main"]
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at TestFramework.basics.getPlaceAPI(basics.java:18)
+	... 23 more
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="TestFramework.basics6" name="JiraAPICreateIssue" time="0.002">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class io.restassured.RestAssured">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at TestFramework.basics6.JiraAPICreateIssue(basics6.java:33)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException [in thread "main"]
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at TestFramework.basics.getPlaceAPI(basics.java:18)
+	... 23 more
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="TestFramework.basics8" name="AddBooks" time="0.002">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class io.restassured.RestAssured">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at TestFramework.basics7.AddBooks(basics7.java:74)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException [in thread "main"]
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at TestFramework.basics.getPlaceAPI(basics.java:18)
+	... 23 more
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="TestFramework.basics8" name="JiraAPIUpdate" time="0.001">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class io.restassured.RestAssured">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at TestFramework.basics8.JiraAPIUpdate(basics8.java:31)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException [in thread "main"]
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at TestFramework.basics.getPlaceAPI(basics.java:18)
+	... 23 more
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="TestFramework.basics7" name="AddBooks" time="0.002">
+    <failure type="java.lang.NoClassDefFoundError" message="Could not initialize class io.restassured.RestAssured">
+      <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at TestFramework.basics7.AddBooks(basics7.java:74)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException [in thread "main"]
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at TestFramework.basics.getPlaceAPI(basics.java:18)
+	... 23 more
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>
