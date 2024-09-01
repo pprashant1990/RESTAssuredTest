@@ -1,55 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" verbose="0">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test name="Test(failed)" preserve-order="false">
+  <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="TestFramework.basics5">
+      <class name="TestFramework.basics6">
         <methods>
-          <include name="extractingNamesAPI"/>
+          <include name="JiraAPICreateIssue"/>
+          <include name="getData"/>
         </methods>
-      </class>
+      </class> <!-- TestFramework.basics6 -->
+      <class name="TestFramework.basics4">
+        <methods>
+          <include name="postDataXML"/>
+        </methods>
+      </class> <!-- TestFramework.basics4 -->
+      <class name="TestFramework.basics7">
+        <methods>
+          <include name="AddBooks"/>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- TestFramework.basics7 -->
       <class name="TestFramework.basics3">
         <methods>
           <include name="AddandDeletePlace"/>
           <include name="getData"/>
         </methods>
-      </class>
-      <class name="TestFramework.basics4">
+      </class> <!-- TestFramework.basics3 -->
+      <class name="TestFramework.basics5">
         <methods>
-          <include name="postDataXML"/>
+          <include name="extractingNamesAPI"/>
         </methods>
-      </class>
+      </class> <!-- TestFramework.basics5 -->
+      <class name="TestFramework.basics">
+        <methods>
+          <include name="getPlaceAPI"/>
+        </methods>
+      </class> <!-- TestFramework.basics -->
+      <class name="TestFramework.basics2">
+        <methods>
+          <include name="createPlaceAPI"/>
+        </methods>
+      </class> <!-- TestFramework.basics2 -->
       <class name="TestFramework.basics8">
         <methods>
           <include name="AddBooks"/>
           <include name="getData"/>
           <include name="JiraAPIUpdate"/>
         </methods>
-      </class>
-      <class name="TestFramework.basics6">
-        <methods>
-          <include name="JiraAPICreateIssue"/>
-          <include name="getData"/>
-        </methods>
-      </class>
-      <class name="TestFramework.basics">
-        <methods>
-          <include name="getPlaceAPI"/>
-        </methods>
-      </class>
-      <class name="TestFramework.basics2">
-        <methods>
-          <include name="createPlaceAPI"/>
-        </methods>
-      </class>
-      <class name="TestFramework.basics7">
-        <methods>
-          <include name="AddBooks"/>
-        </methods>
-      </class>
+      </class> <!-- TestFramework.basics8 -->
     </classes>
-  </test>
-</suite>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
